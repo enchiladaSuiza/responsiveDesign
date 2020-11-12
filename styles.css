@@ -4,7 +4,7 @@
 }
 
 header {
-    margin: 50px 40px;
+    margin: 4em;
 }
 
 nav {
@@ -14,20 +14,31 @@ nav {
     align-items: center;
 }
 
-nav > ul > li {
+nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin: 0 1em;
     font-size: 18px;
 }
 
-.actions > * {
-    margin: 0 20px;
+nav ul li a {
+    color: darkcyan;
+}
+
+.actions * {
+    margin: 0 1em;
 }
 
 button {
     background-color: greenyellow;
-    padding: 16px;
+    padding: 1em;
     border: green;
+    display: inline;
+}
+
+.container-flex {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 h2 {
@@ -35,17 +46,31 @@ h2 {
     font-size: 60px;
 }
 
-p {
+h3 {
+    font-weight: bold;
     font-size: 22px;
+}
+
+main {
+    margin: 0 4vw;
+}
+
+p {
+    font-size: 20px;
+}
+
+img {
+    max-width: 100%;
 }
 
 .intro {
     display: grid;
     grid-template-columns: 50% 50%;
+    margin: 2em;
 }
 
 .content > * {
-    margin: 20px;
+    margin: 2rem;
 }
 
 .intro > .content {
@@ -53,13 +78,53 @@ p {
     grid-column-end: 2;
 }
 
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smaller {
+    font-size: 14px;
+    color: gray;
+}
+
+.sponsors {
+    margin: 4em;
+}
+
 .sponsors > p {
     text-align: center;
 }
 
 .sponsors > .brands {
+    margin: 2em;
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 3em;
     align-items: center;
+}
+
+.features {
+    text-align: center;
+    margin-top: 10em;
+}
+
+.points {
+    display: flex;
+}
+
+.points article {
+    margin: 0.5vw;
+}
+
+.points img {
+    height: 40vh;
+    width: 40vw;
+    margin: 1em;
+}
+
+.points h3 {
+    margin: 0.5em;
 }
