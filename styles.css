@@ -52,7 +52,7 @@ h3 {
 }
 
 main {
-    margin: 0 4vw;
+    margin: 0 3vw;
 }
 
 p {
@@ -60,7 +60,7 @@ p {
 }
 
 img {
-    max-width: 100%;
+    max-width: 95%;
 }
 
 .intro {
@@ -121,10 +121,48 @@ img {
 
 .points img {
     height: 40vh;
-    width: 40vw;
+    width: 30vw;
     margin: 1em;
 }
 
 .points h3 {
     margin: 0.5em;
+}
+
+.tools {
+    text-align: center;
+    margin-top: 10em;
+}
+
+.tools h2 {
+    font-size: 40px;
+}
+
+.tools-container {
+    margin-top: 3em;
+    display: flex;
+    justify-content: space-between;
+    align-items: cetner;
+    gap: 1vw;
+}
+
+.tools-container article {
+    border: 1px solid black;
+    width: 22vw;
+}
+
+.tools-container img {
+    max-width: 15%;
+}
+
+.tools-container h3 {
+    font-size: 20px
+}
+
+.tools-container p {
+    font-size: 18px;
+}
+
+.tools-container article * {
+    margin: 0.7em 0.3em;
 }
