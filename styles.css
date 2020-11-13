@@ -37,6 +37,7 @@ button {
 
 .container-flex {
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-around;
     align-items: center;
 }
@@ -49,6 +50,11 @@ h2 {
 h3 {
     font-weight: bold;
     font-size: 22px;
+}
+
+h4 {
+    color: darkslategray;
+    font-size: 18px;
 }
 
 main {
@@ -141,6 +147,7 @@ img {
 .tools-container {
     margin-top: 3em;
     display: flex;
+    flex-flow: row wrap;
     justify-content: space-between;
     align-items: cetner;
     gap: 1vw;
@@ -148,7 +155,8 @@ img {
 
 .tools-container article {
     border: 1px solid black;
-    width: 22vw;
+    width: 20vw;
+    padding: 5vh 1vw;
 }
 
 .tools-container img {
@@ -156,7 +164,7 @@ img {
 }
 
 .tools-container h3 {
-    font-size: 20px
+    font-size: 19px
 }
 
 .tools-container p {
@@ -165,4 +173,45 @@ img {
 
 .tools-container article * {
     margin: 0.7em 0.3em;
+}
+
+.about {
+    margin-top: 30vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    height: 30em;
+}
+
+.flashcards {
+    border: 1px solid black;
+    border-radius: 10px;
+}
+
+.flashcards * {
+    margin: 0.5em;
+}
+
+.flashcards > p {
+    font-size: 30px;
+}
+
+.flashcards button {
+    padding: 1em 5em;
+}
+
+.icon {
+    width: 2em;
+}
+
+.about .content {
+    margin: 1rem;
+}
+
+.content button {
+    margin: 1em 2em;
+}
+
+.comparison {
+    margin-top: 20em;
+    text-align: center;
 }
