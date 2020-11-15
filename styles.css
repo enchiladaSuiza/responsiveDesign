@@ -54,16 +54,20 @@ h4 {
     font-size: 18px;
 }
 
-main {
-    margin: 0 1vw;
-}
-
 p {
     font-size: 18px;
 }
 
+main {
+    margin: 0 1vw;
+}
+
 img {
     max-width: 100%;
+}
+
+#menu {
+    display: none;
 }
 
 .smaller {
@@ -123,6 +127,7 @@ img {
 
 .points {
     display: flex;
+    flex-flow: row nowrap;
     margin-top: 4em;
 }
 
@@ -396,7 +401,7 @@ footer {
 }
 
 footer p, footer h4 {
-    margin: 1em;
+    margin: 1rem;
 }
 
 .social {
@@ -437,4 +442,160 @@ footer p, footer h4 {
     grid-column-end: span 2;
     flex-flow: row nowrap;
     justify-content: flex-end;
+}
+
+@media (max-width: 1200px) {
+    .actions {
+        display: none;
+    }
+
+    .brands {
+        margin: 1rem 5rem;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        gap: 4em;
+        align-items: center;
+    }
+
+    #menu {
+        display: block;
+        width: 5%;
+    }
+
+    .points {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: center;
+        align-items: flex-start;
+        margin-top: 2em;
+    }
+    
+    .points img {
+        width: 50%;
+        height: 20%;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+    }
+    
+    .points * {
+        margin: 1em 0;
+    }
+
+    .points article {
+        margin: 0 20vw;
+    }
+
+    .demo-button button {
+        width: 40%;
+    }
+}
+
+@media (max-width: 1000px) {
+    nav ul {
+        display: none;
+    }
+
+    .tools {
+        text-align: center;
+        margin-top: 10em;
+        margin-left: 10vw;
+        margin-right: 10vw;
+    }
+    
+    .tools-container {
+        margin-top: 3em;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    
+    .tools-container article {
+        border: 1px solid lightgray;
+        border-radius: 5px;
+        width: 30vw;
+        padding: 5vh 1vw;
+    }
+
+    footer p, footer p a {
+        font-size: 14px;
+    }
+
+    footer h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    h2 {
+        font-size: 35px;
+    }
+    
+    h3 {
+        font-size: 22px;
+    }
+    
+    h4 {
+        font-size: 18px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+
+    .smaller {
+        font-size: 12px;
+        color: gray;
+    }
+
+    .intro {
+        display: flex;
+        flex-flow: column wrap;
+        justify-content: center;
+        text-align: center;
+        margin: 1vh 10vw;
+    }
+
+    .flashcards > p {
+        font-size: 16px;
+    }
+
+    .brands img {
+        width: 20%;
+    }
+
+    .points img {
+        width: 40%;
+        height: 20%;
+        border: 1px solid lightgray;
+        border-radius: 5px;
+    }
+
+    .flashcards button {
+        padding: 1em 3em;
+    }
+
+    .sites {
+        margin-top: 15rem;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    .sites > div {
+        border: 1px solid lightgrey;
+        border-radius: 5px;
+        padding: 1em;
+    }
+    
+    .demo-text p {
+        font-size: 14px;
+    }
+    
+    .demo-button button {
+        width: 60%;
+    }
+
+    footer p, footer p a {
+        font-size: 12px;
+    }
 }
